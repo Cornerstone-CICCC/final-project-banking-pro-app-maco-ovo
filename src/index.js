@@ -443,4 +443,18 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-main();
+// Prevent main() from running automatically when testing
+if (require.main === module) {
+  main();
+}
+
+// Export functions for Jest testing (White Box Testing)
+module.exports = {
+  data,
+  createAccount,
+  depositFunds,
+  withdrawFunds,
+  transferFunds,
+  findAccountById,
+  main
+};

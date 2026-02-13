@@ -1,0 +1,19 @@
+{
+  "accounts": [
+    {
+      "id": "ACC-1108",
+      "holderName": "Makoto",
+      "balance": 1000,
+      "createdAt": "2026-02-13T19:38:43.608Z",
+      "transactions": [
+        {
+          "type": "DEPOSIT",
+          "amount": 1000,
+          "timestamp": "2026-02-13T19:38:43.608Z",
+          "balanceAfter": 1000,
+          "description": "Initial deposit"
+        }
+      ]
+    }
+  ]
+}
